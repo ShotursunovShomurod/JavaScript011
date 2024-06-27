@@ -1,0 +1,129 @@
+.build {
+  width: 100%;
+  padding: 140px 165px;
+  background: #012f34;
+  .build__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .build__left {
+      width: 50%;
+      p {
+        font-weight: 700;
+        color: #fff;
+        font-size: 48px;
+        max-width: 445px;
+      }
+    }
+    .build__block {
+      width: 50%;
+      display: flex;
+      .build__right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        .build__card {
+          display: flex;
+          width: 100%;
+          gap: 30px;
+          .build__img {
+            width: 10%;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .build__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p:nth-child(1) {
+              font-weight: 600;
+              color: #f67e7e;
+              font-size: 18px;
+            }
+            p:nth-child(2) {
+              font-weight: 600;
+              color: #fff;
+              font-size: 15px;
+              max-width: 400px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .build {
+    padding: 100px 98px;
+    .build__wrapper {
+      width: 100%;
+      display: flex;
+      gap: 64px;
+      flex-direction: column;
+      .build__block {
+        width: 100%;
+        .build__right {
+          width: 100%;
+          .build__card {
+            width: 100%;
+            .build__img {
+              img {
+                width: 62px;
+                height: 62px;
+              }
+            }
+            .build__content {
+              width: 100%;
+              p {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .build__left {
+        width: 100%;
+        p {
+          font-size: 13px;
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .build {
+    padding: 64px 24px;
+    .build__wrapper {
+      .build__block {
+        .build__right {
+          .build__card {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .build__img {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              img {
+                width: 72px;
+              }
+            }
+            .build__content {
+              width: 100%;
+              align-items: center;
+              p {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
